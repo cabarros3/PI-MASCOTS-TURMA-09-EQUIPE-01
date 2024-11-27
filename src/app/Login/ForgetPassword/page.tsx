@@ -1,3 +1,4 @@
+"use client";
 import { BtnColorBg } from "@/app/components/ui/btn/btnColorBg";
 import Link from "next/link";
 

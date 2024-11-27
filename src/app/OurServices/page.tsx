@@ -1,3 +1,4 @@
+"use client";
 import { AboutMascots } from "../components/homePage/AboutMascots";
 import { FooterHomePage } from "../components/homePage/footerHomePage";
 import { GeneralHeader } from "../components/ui/headers/generalHeader";

@@ -1,6 +1,5 @@
 "use client";
 import { SideBar } from "@/app/components/navigationScreen/sidebar/sidebar";
-// import data from "../../../../../public/components/data.json";
 import { Header } from "@/app/components/navigationScreen/header/header";
 import { BreadCrumb } from "@/app/components/ui/breadcrumbs/breadcrumb";
 import { TutorInformation } from "@/app/components/ui/titles/tutorInformation";
@@ -12,27 +11,6 @@ import CircularProgress from "@mui/material/CircularProgress";
 import { doc, getDoc } from "firebase/firestore";
 import { db, storage } from "@/lib/firebase/firebase.config";
 import { ref, getDownloadURL } from "firebase/storage";
-// import { useRouter } from 'next/router';
-// import EditPetModal from "@/app/components/ui/modal/editPetModal";
-
-// type Patient = {
-//   userType: string;
-//   owners_name: string;
-//   owners_cpf: string;
-//   owners_fone: string;
-//   owners_email: string;
-//   hospitalStatus: string;
-//   usageType: string;
-//   name: string;
-//   specie: string;
-//   breed: string;
-//   gender: string;
-//   fisicalDescription: string;
-//   weight: string;
-//   link_profilePic: string;
-//   alergies: string;
-//   age: string;
-// };
 
 type Patient = {
   id: string;
@@ -63,26 +41,8 @@ type Patient = {
   link_profilePic: string;
 };
 
-// interface Params {
-//   params: {
-//     id: string;
-//   };
-// }
-
-// para gerar rotas dinâmicas
-// export async function generateStaticParams() {
-//   // para gerar rotas com os id's
-//   return data.map((patient) => ({
-//     id: patient.id.toString(),
-//   }));
-// }
-
 // função para renderizar o perfil
 export default function PatientProfileId() {
-  // const id = Array.isArray(params["id"]) ? params["id"][0] : params["id"];
-  // const tutorId = params["tutorId"];
-  // const petId = params["petId"];
-
   // para pegar os ids e passar na rota
   const params = useParams();
   const router = useRouter();

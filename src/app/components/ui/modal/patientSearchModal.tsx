@@ -1,22 +1,6 @@
-// import { fetchPatients } from "@/app/api/getPatients";
-// import localData from "../../../../../public/components/data.json";
-import { useState, useEffect } from "react";
+"use client";
 
-// interface PatientsJson {
-//   icon: string;
-//   name: string;
-//   schedule: string;
-//   description: string;
-//   recordNumber: string;
-//   admissionDate: string;
-//   exitDate: string;
-//   weight: string;
-//   fisicalDescription: string;
-//   specie: string;
-//   vet: string;
-//   vetSpeciality: string;
-//   appointmentStatus: string;
-// }
+import { useState, useEffect } from "react";
 
 interface PetData {
   recordNumber: string; // ou number, dependendo do formato no JSON
@@ -62,43 +46,6 @@ export function PatientSearcModal({
   const [filteredPatients, setFilteredPatients] = useState<Patient[]>([]);
   const [patients, setPatients] = useState<Patient[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
-
-  // useEffect(() => {
-  //   fetch("/components/data.json")
-  //     .then((response) => response.json())
-  //     .then((data) => setAppointments(data))
-  //     .catch((error) => console.error("Erro ao carregar dados:", error));
-  // }, []);
-
-  // // pegar da api
-  // useEffect(() => {
-  //   const loadPatients = async () => {
-  //     try {
-  //       const data = await fetchPatients();
-
-  //       const localDataMapped = localData.map((item) => ({
-  //         pet_id: parseInt(item.recordNumber),
-  //         pet_name: item.name,
-  //         species: item.specie,
-  //         gender: item.gender,
-  //         age: "",
-  //         breed: item.breed,
-  //         weight: item.weight,
-  //         physical_characteristics: item.fisicalDescription,
-  //         owners_cpf: item.owners_cpf,
-  //       }));
-
-  //       // const combinedData = [...data, ...localDataMapped];
-
-  //       console.log("Dados da API:", data);
-  //       setPatients(localDataMapped);
-  //     } catch (error) {
-  //       console.error("Erro ao carregar os dados dos pacientes: ", error);
-  //     }
-  //   };
-
-  //   loadPatients();
-  // }, []);
 
   useEffect(() => {
     fetch("/components/data.json")

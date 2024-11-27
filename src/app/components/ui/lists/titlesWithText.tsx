@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 
 export function TitlesWithText() {
@@ -48,7 +49,9 @@ export function TitlesWithText() {
           </span>
           <div
             className={`transition-all duration-300 ease-in-out overflow-hidden ${
-              openIndex === index ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+              openIndex === index
+                ? "max-h-screen opacity-100"
+                : "max-h-0 opacity-0"
             }`}
           >
             <div className="px-6 py-4 my-5 text-gray-700 bg-gray-50">

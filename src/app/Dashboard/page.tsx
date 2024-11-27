@@ -1,3 +1,4 @@
+"use client";
 import { Appointments } from "@/app/components/internalHomePage/appointments";
 import { Schedule } from "@/app/components/internalHomePage/scheduleForTheDay";
 import { Header } from "@/app/components/navigationScreen/header/header";
@@ -5,7 +6,8 @@ import { SideBar } from "@/app/components/navigationScreen/sidebar/sidebar";
 import Patient from "../components/internalHomePage/patient";
 import LogOutbutton from "../components/LogOutButton";
 
-async function Page() {
+export default function Page() {
+  //antes estava com async
   // const session = await getServerSession();
 
   // if (!session) {
@@ -31,5 +33,3 @@ async function Page() {
     </div>
   );
 }
-
-export default Page;

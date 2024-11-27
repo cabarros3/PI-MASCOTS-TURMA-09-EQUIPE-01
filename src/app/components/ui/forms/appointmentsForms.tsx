@@ -1,3 +1,4 @@
+"use client";
 import { useAppointmentQueue } from "@/app/contexts/appointmentQueueContext";
 import { useEffect, useState } from "react";
 

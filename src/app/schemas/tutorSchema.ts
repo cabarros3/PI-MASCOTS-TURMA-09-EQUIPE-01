@@ -1,4 +1,5 @@
-import { z } from 'zod';
+"use client";
+import { z } from "zod";
 
 export const tutorSchema = z.object({
   nome: z.string().min(1, { message: "Nome é obrigatório" }),

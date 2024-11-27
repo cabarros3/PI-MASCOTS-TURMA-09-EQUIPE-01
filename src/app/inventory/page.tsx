@@ -1,3 +1,4 @@
+"use client";
 import { Header } from "../components/navigationScreen/header/header";
 import { SideBar } from "../components/navigationScreen/sidebar/sidebar";
 
