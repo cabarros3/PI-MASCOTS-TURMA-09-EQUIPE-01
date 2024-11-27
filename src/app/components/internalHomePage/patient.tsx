@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { CardTypePatient } from "../ui/card/cardTypepatient";
+import { CardTypePatient } from "@/app/components/ui/card/cardTypePatient";
 
 interface patient {
   name: string;
