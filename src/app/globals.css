@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.roboto-thin {
+  font-family: var(--font-roboto-thin);
+}
+
+.roboto-light {
+  font-family: var(--font-roboto-light);
+}
+
+.roboto-regular {
+  font-family: var(--font-roboto-regular);
+}
+
+.roboto-medium {
+  font-family: var(--font-roboto-medium);
+}
+
+.roboto-bold {
+  font-family: var(--font-roboto-bold);
+}
+
+.quicksand-light {
+  font-family: var(--font-quicksand-light);
+}
+
+.quicksand-regular {
+  font-family: var(--font-quicksand-regular);
+}
+
+.quicksand-medium {
+  font-family: var(--font-quicksand-medium);
+}
+
+.quicksand-semibold {
+  font-family: var(--font-quicksand-semibold);
+}
+
+.quicksand-bold {
+  font-family: var(--font-quicksand-bold);
+}
+
+html {
+  scroll-behavior: smooth;
+  background: white;
+}
