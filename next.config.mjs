@@ -34,6 +34,35 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/Dashboard",
+        destination: "/dashboard", // Converta para minúsculas
+        permanent: true, // Indica que o redirecionamento é permanente (código 308)
+      },
+      {
+        source: "/Login",
+        destination: "/login", // Converta para minúsculas
+        permanent: true,
+      },
+      {
+        source: "/Login/ForgetPassword",
+        destination: "/login/forgetPassword", // Converta para minúsculas
+        permanent: true,
+      },
+      {
+        source: "/OurServices",
+        destination: "/ourServices", // Converta para minúsculas
+        permanent: true,
+      },
+      {
+        source: "/Schedule",
+        destination: "/schedule", // Converta para minúsculas
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
