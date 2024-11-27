@@ -48,7 +48,7 @@ export function HeaderHomePage() {
           </ul>
         </nav>
         <div>
-          <Link href="/Login">
+          <Link href="/login">
             <BtnWhiteBg content="Acessar o Mascot's" />
           </Link>
         </div>
