@@ -30,7 +30,7 @@ export default function TimeLineItems({
             <h3 className="text-lg font-semibold text-blue-600">{title}</h3>
           </div>
           <div>
-            <p className="mt-2 text-gray-700">{description}</p>
+            <p className="mt-2 text-xs text-gray-700">{description}</p>
           </div>
         </div>
       </div>

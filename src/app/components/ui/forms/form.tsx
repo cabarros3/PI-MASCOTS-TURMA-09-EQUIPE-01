@@ -172,7 +172,7 @@ export default function GeneralForm() {
             <select
               name="Tipo de atendimento"
               id="tipo"
-              className="px-2 py-2"
+              className="px-2 py-2 border"
               value={selectedOption}
               onChange={handleSelectChange}
               required
@@ -208,11 +208,11 @@ export default function GeneralForm() {
             name="veterinário"
             value={selectedVet}
             onChange={handleVetChange}
-            className="w-2/4 px-2 py-2"
+            className="w-2/4 px-2 py-2 border"
           >
-            <option value="Veterinário 1">Veterinário 1</option>
-            <option value="Veterinário 2">Veterinário 2</option>
-            <option value="Veterinário 3">Veterinário 3</option>
+            <option value="Veterinário 1">Dra. Camilla Barros</option>
+            <option value="Veterinário 2">Dr. Lucas Galvão</option>
+            <option value="Veterinário 3">Dra. Izabelle Alves</option>
           </select>
         </div>
         <div className="flex flex-col gap-2">
@@ -220,7 +220,7 @@ export default function GeneralForm() {
           <textarea
             value={textareaValue}
             onChange={handleTextareaChange}
-            className="w-full px-3 py-3"
+            className="w-full px-3 py-3 border"
           />
         </div>
         <div className="flex items-center gap-3">
