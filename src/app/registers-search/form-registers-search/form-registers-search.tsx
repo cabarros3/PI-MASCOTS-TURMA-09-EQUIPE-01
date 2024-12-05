@@ -603,9 +603,9 @@ export default function SearchTutorAndPet() {
                             <span className="text-sm text-gray-600">
                               Espécie: {(result as PetJson).especie}
                             </span>
-                            <span className="text-sm text-gray-600">
+                            {/* <span className="text-sm text-gray-600">
                               Raça: {(result as PetJson).raca}
-                            </span>
+                            </span> */}
                             <span className="text-sm text-gray-600">
                               Raça: {(result as PetJson).raca}
                             </span>
