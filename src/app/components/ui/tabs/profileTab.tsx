@@ -20,7 +20,11 @@ type PetData = {
   weight: string;
 };
 
-export default function ProfileTab() {
+type ProfileTabProps = {
+  actionButton?: React.ReactNode;
+};
+
+export default function ProfileTab({ actionButton }: ProfileTabProps) {
   const [activeTab, setActiveTab] = useState("Histórico");
   const [selectedYear, setSelectedYear] = useState("");
   // const router = useRouter();
@@ -274,8 +278,13 @@ export default function ProfileTab() {
             <div className="py-10 px-5">
               <div className="flex flex-row flex-wrap gap-5 justify-center">
                 <div className="flex flex-col flex-wrap gap-3 bg-tuftsBlue w-52 px-10 py-5 rounded-tl-xl rounded-br-xl justify-center items-center">
-                  <i className="fa-solid fa-suitcase-medical text-white text-3xl"></i>
-                  <span className="text-white text-lg">Atendimento</span>
+                  {/* {actionButton && (
+                    <div>
+                      <i className="fa-solid fa-suitcase-medical text-white text-3xl"></i>
+                      <span className="text-white text-lg">Atendimento</span>
+                    </div>
+                  )} */}
+                  {actionButton}
                 </div>
                 <div className="flex flex-col gap-3 bg-auburn px-10 py-5 w-52 rounded-tl-xl rounded-br-xl justify-center items-center">
                   <i className="fa-solid fa-file-medical text-white text-3xl"></i>

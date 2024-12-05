@@ -221,10 +221,16 @@ export default function PatientProfileId() {
                 </div>
               </div>
               <div className="">
-                <ProfileTab></ProfileTab>
-                <button onClick={goToConsultations} className="btn-primary">
-                  Ver Consultas
-                </button>
+                <ProfileTab
+                  actionButton={
+                    <button onClick={() => goToConsultations()}>
+                      <div>
+                        <i className="fa-solid fa-suitcase-medical text-white text-3xl"></i>
+                        <span className="text-white text-lg">Atendimento</span>
+                      </div>
+                    </button>
+                  }
+                ></ProfileTab>
               </div>
             </div>
           </main>
